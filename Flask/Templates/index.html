@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arthritis Prevalence Application</title>
+</head>
+<body>
+
+<h2>Artitis Crude Prevalence in California by County 2021</h2>
+
+<form method="post">
+    <select name="county" onchange="this.form.submit()">
+        {% for county in counties %}
+        <option value="{{ county }}" {% if county == selected_county %} selected {% endif %}>{{ county }}</option>
+        {% endfor %}
+    </select>
+</form>
+
+<img src="data:image/png;base64,{{ img }}" alt="Visualization of Arthitis Crude Prevalence in California" />
+
+</body>
+</html>
