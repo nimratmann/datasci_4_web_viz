@@ -8,7 +8,7 @@ When I tried to run my shiny app in posit cloud using the code, my console state
 
 # Shiny Python
 Url: [https://nimratmann.shinyapps.io/my_shiny_app/ ](https://nimratmann.shinyapps.io/my_shiny_app/ )
-While trying to run my shiny app in the Linux terminal in Google shell, my command ```rsconnect deploy shiny/home/nimrat_mann/datasci_4_web_viz/shiny_python --name nimratmann --title "My Shiny App"``` prompted a "no such command" error. I had to revise the code to ``` rsconnect deploy shiny ~/datasci_4_web_viz/shiny_python --name nimratmann --title "My Shiny App" ```. I also had an issue with my requirements.txt file, as shiny was pip-freezing the Google shell environment. Therefore, I 
+While trying to run my shiny app in the Linux terminal in Google shell, my command ```rsconnect deploy shiny/home/nimrat_mann/datasci_4_web_viz/shiny_python --name nimratmann --title "My Shiny App"``` prompted a "no such command" error. I had to revise the code to ``` rsconnect deploy shiny ~/datasci_4_web_viz/shiny_python --name nimratmann --title "My Shiny App" ```. I also had an issue with my requirements.txt file, as shiny was pip-freezing the Google shell environment. Therefore, I created a requirements.txt file manually in my shiny_python folder and added the ```pandas, shiny, matplotlib``` libraries. After these changes, I was able to run my code smoothly and deploy my application.
 
 
 # Python Flask
