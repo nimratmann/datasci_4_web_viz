@@ -12,5 +12,5 @@ While trying to run my shiny app in the Linux terminal in Google shell, my comma
 
 
 # Python Flask
-I had no issues running my flask application in the google shell environment terminal locally.
-"
+I had no issues running my Flask application locally, in the Google Shell Environment.
+
