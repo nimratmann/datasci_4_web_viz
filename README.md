@@ -3,8 +3,7 @@ Web-Based Data Visualization Using R, Python, Shiny and Python Flask
 
 # Shiny R
 Url: [https://nimratmann.shinyapps.io/CA_Arthritis_Crude_Prevalence/](https://nimratmann.shinyapps.io/CA_Arthritis_Crude_Prevalence/)
-When I tried to run my shiny app in posit cloud using the code, my console stated that it could not find the function "arthritis_data". This was because in line 42 under "render the bar plot", my code was ``` arthritis_data <- arthritis_data``` instead of ```arthritis_data <- df()```. After I edited my code, I was able to run my code smoothly and deploy on shiny.
-
+When I tried to run my shiny app in posit cloud using the code, my console stated that it could not find the function "arthritis_data". This was because in line 42 under "render the bar plot", my code was ``` arthritis_data <- arthritis_data``` and it prompted a "Warning: Error in arthritis_data: could not find function 'arthritis_data'" message. After I changed the code to ```arthritis_data <- df()```, I was able to run my code smoothly.
 
 
 # Shiny Python
